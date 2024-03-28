@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="box">
+        <h1>hello</h1>
+    </div>
+
+    <!-- <h1 id="msg"></h1> -->
+    <button id="myBtn"></button>
+
+    <script>
+        console.log("working")
+        let  btn = document.getElementById('myBtn');
+        let box = document.getElementById("box");
+        btn.style.backgroundColor="navy"
+        btn.style.color="white";
+        btn.style.border="none";
+        btn.style.padding="10px 30px"
+        btn.style.cursor='pointer'
+        btn.innerText="click me"
+
+        function show(){
+        const h1=document.createElement("h1");
+        h1.innerText="world";
+        document.body.append(h1);
+        }
+
+        btn.onclick=show;
+
+
+
+
+           // btn.addEventListener('click', function(){
+        //     let arr=[1,2,3,4,5,6];
+        // let newArr=[]
+        // arr.forEach(function (ar){
+        //     newArr.push(ar*ar)
+        // console.log(newArr)
+        // })
+        // })
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <h1>hello</h1>
+
+    <button id="demo">black</button>
+    <button id="demo1">white</button> -->
+
+    <br><br>
+    <input type="text" id="txt">
+    <br>
+    <button id="upr">upper</button>
+
+    <button id="prm">prompt</button>
+    <h1 id="msg"></h1>
+
+
+    <script>
+        let prom = document.getElementById("prm");
+        prom.addEventListener("click",()=>{
+            var text = prompt("your name");
+            document.getElementById("msg").innerText = "your name is " + text;
+        })
+
+
+
+
+
+
+
+
+        var upr = document.getElementById("upr");
+        upr.addEventListener("click",()=>{
+        var text = document.getElementById("txt").value;
+            var upper = text.toUpperCase();
+            document.getElementById("txt").value = upper;
+        })
+
+
+
+        // let demo = document.getElementById("demo")
+        // let demo1 = document.getElementById("demo1")
+        // demo.addEventListener("click",()=>{
+        //     document.body.style.backgroundColor="black";
+        //     document.body.style.color="white";
+        // })
+        // demo1.addEventListener("click",()=>{
+        //     document.body.style.backgroundColor="white";
+        //     document.body.style.color="black";
+        // })
+    </script>
+    
+</body>
+</html>

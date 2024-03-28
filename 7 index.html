@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: antiquewhite;
+            margin: auto;
+            padding: auto;
+            font-size: large;
+            font-weight: bold;
+        }
+        input{
+            border: none;
+            outline: none;
+            /* padding: 10px; */
+            margin: 10px;
+            background-color: gray;
+            color: white;
+            font-size: large;
+        }
+        button{
+            padding: 5px 25px;
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 id="demo"></h1>
+
+   inp 1 = <input id="text1">
+
+    <!-- <p id="res1"></p> -->
+
+    inp 2 =<input id="text2">
+    <br><br>
+
+   <center>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+   </center>
+    
+    
+    <br>
+
+    Result: <input id="result" readonly>
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>hello</h1>
+    <button onclick="show()">alert</button>
+    <button onclick="prm()">prompt</button>
+    <button onclick="cnfrm()">confirm</button>
+    <p id="demo"></p>
+
+
+    <script>
+        console.log("working")
+
+
+        function show(){
+            alert("hello guys");
+        }
+        function prm(){
+            let name = prompt("what is your name");
+            console.log(name)
+            document.getElementById("demo").innerHTML = "Hello " + name;
+        }
+        function cnfrm(){
+            let a = confirm("are you sure to delete");
+            console.log(a)
+            if(a==true){
+                alert("Your file has been deleted");
+            }
+            else{
+                alert("delete cancel");
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>hello</h1>
+
+
+
+    <script>
+        // console.log("working")
+        // let a = document.body.children;
+        // let arr = Array.from(a);
+        // console.log(arr)
+        // for(i=0; i<arr.length; i++){
+        //     console.log(arr[i])
+        // }
+
+
+        const arr = [2,4,6,8,10];
+
+        let result = arr.filter((value,index)=>{
+                return value>2; 
+        })
+        console.log(result)
+        console.log(arr)
+
+        arr.forEach((value,index)=>{
+            console.log(value+10)
+            // console.log(index)
+        })
+
+
+        let newArr = arr.map((val,ind)=>{
+            return val+10;
+        })
+        console.log(newArr)
+
+
+
+
+
+        // foreach
+        // Map    important
+        // filter   important
+        // find 
+        // some 
+        // every
+
+
+    </script>
+</body>
+</html>

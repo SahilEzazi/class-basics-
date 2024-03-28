@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>loop</h1>
+
+
+    <script>
+        console.log("working")
+
+        let person = {
+            firstName:"Sahil",
+            lastName:"Ezazi",
+            age:24,
+            address:{
+                city:"sre",
+                state:"UP"
+            }
+        }
+        console.log(person)
+        let id="";
+        let i;
+        for(i in person.address){
+            id = person.address[i];
+            console.log(id + " bye")
+        }
+
+
+    </script>
+    
+</body>
+</html>
