@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classTitle{
+            background-color: rgb(35, 35, 132);
+            color: wheat;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+        button{
+            padding: 20px 30px;
+            margin: 30px;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: wheat;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="heading">hello</h1>
+    <!-- <h2 id="title">javascript</h2> -->
+
+    <button id="btn">click here</button>
+
+    <button onclick="local()">Local storage</button>
+    <button onclick="session()">Session storage</button>
+    
+
+    <script>
+        console.log("working")
+        let heading = document.getElementById("heading")
+        // let title = document.getElementById("title")
+        let btn = document.getElementById("btn")
+
+        // addEventListener("contextmenu",(e)=>{
+        //     e.preventDefault();
+        // })
+
+        btn.addEventListener("mouseover",()=>{
+            btn.style.transform= "scale(1.2)"
+        })
+        btn.addEventListener("mouseout", () => {
+            btn.style.transform = ""
+        })
+        btn.addEventListener("click",()=>{
+            let para = document.createElement("h2")
+            para.innerText = "javascript is awesome !"
+
+            para.classList.add("classTitle")
+            document.body.append(para)
+
+            // btn.removeEventListener("mouseout")
+
+        })
+
+
+        function local(){
+            localStorage.setItem("sahil","ezazi")
+        }
+
+        function session(){
+            sessionStorage.setItem("sahil","ezazi")
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
